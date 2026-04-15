@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV - Your Full Name</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f4f6f9;
+      padding: 40px 20px;
+      line-height: 1.6;
+    }
+
+    .cv-container {
+      max-width: 1000px;
+      margin: 0 auto;
+      background: white;
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    /* Professional Header */
+    .header {
+      background: linear-gradient(135deg, #0f172a, #1e40af);
+      color: white;
+      padding: 40px 50px;
+      display: flex;
+      align-items: center;
+      gap: 40px;
+    }
+
+    .photo {
+      width: 170px;
+      height: 170px;
+      border: 6px solid rgba(255, 255, 255, 0.9);
+      border-radius: 50%;
+      overflow: hidden;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    }
+
+    .photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .header-info h1 {
+      font-size: 38px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .header-info .course {
+      font-size: 22px;
+      opacity: 0.95;
+      margin-bottom: 4px;
+    }
+
+    /* Main Content */
+    .main-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px;
+      padding: 50px;
+    }
+
+    .section-title {
+      font-size: 20px;
+      font-weight: 700;
+      color: #1e40af;
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      border-bottom: 3px solid #3b82f6;
+    }
+
+    /* Left Column - Education & Skills */
+    .left-column .education {
+      color: #333;
+      font-size: 16px;
+    }
+
+    .left-column strong {
+      color: #1e40af;
+      font-weight: 600;
+    }
+
+    /* Skills Table */
+    .skills-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+    }
+
+    .skills-table th {
+      background: #1e40af;
+      color: white;
+      padding: 14px 16px;
+      text-align: left;
+      font-weight: 600;
+    }
+
+    .skills-table td {
+      padding: 14px 16px;
+      border-bottom: 1px solid #e2e8f0;
+    }
+
+    .skills-table tr:nth-child(even) {
+      background: #f8fafc;
+    }
+
+    /* Right Column - Hobbies */
+    .hobbies {
+      list-style: none;
+      padding: 0;
+    }
+
+    .hobbies li {
+      padding: 10px 0 10px 30px;
+      position: relative;
+      color: #444;
+      font-size: 16px;
+    }
+
+    .hobbies li:before {
+      content: "◆";
+      color: #3b82f6;
+      position: absolute;
+      left: 0;
+      font-size: 18px;
+    }
+
+    /* Contact Section */
+    .contact {
+      background: #f8fafc;
+      padding: 28px 50px;
+      border-top: 5px solid #3b82f6;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      font-size: 16.5px;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: #1e40af;
+    }
+
+    .contact-item i {
+      font-size: 22px;
+      width: 28px;
+    }
+
+    .contact-item span {
+      font-weight: 500;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="cv-container">
+    
+    <!-- Header -->
+    <div class="header">
+      <div class="photo">
+        <img src="pc.jpg" alt="Photo">
+      </div>
+      <div class="header-info">
+        <h1>Kawuki Stuart</h1>
+        <p class="course">Course Title</p>
+        <p style="font-size: 18px; opacity: 0.9;">Bachelor Information Technology and computing</p>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      
+      <!-- Left Column -->
+      <div class="left-column">
+        <div class="section-title">Education Background</div>
+        <div class="education">
+          <strong>2024 - To Date</strong><br>
+          BITC Kyambogo University <br><br>
+
+          MT.ST.Marys H/S<br>
+          2019 - 2023<br><br>
+          
+          Canana CTC Primary SCH<br>
+          2011 - 2016
+        </div>
+
+        <div class="section-title" style="margin-top: 45px;">Skills</div>
+        <table class="skills-table">
+          <tr>
+            <th>Skills</th>
+            <th>Level</th>
+          </tr>
+          <tr>
+            <td>HTML</td>
+            <td>Advanced</td>
+          </tr>
+          <tr>
+            <td>CSS</td>
+            <td>Advanced</td>
+          </tr>
+          <tr>
+            <td>Python</td>
+            <td>Intermediate</td>
+          </tr>
+          <tr>
+            <td>Web Development</td>
+            <td>Intermediate</td>
+          </tr>
+          <tr>
+            <td>Cyber security</td>
+            <td>Intermediate</td>
+          </tr>
+        </table>
+      </div>
+
+      <!-- Right Column -->
+      <div>
+        <div class="section-title">Hobbies</div>
+        <ul class="hobbies">
+          <li>Reading Technology Articles</li>
+          <li>Coding &amp; Building Personal Projects</li>
+          <li>Reading New cyber attacks/thearts</li>
+          <li>Listening to Music &amp; Podcasts</li>
+          <li>Traveling &amp; Exploring</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Contact Section -->
+    <div class="contact">
+      <div class="contact-item">
+        <i class="fas fa-phone"></i>
+        <span>0753 009135</span>
+      </div>
+      <div class="contact-item">
+        <i class="fas fa-envelope"></i>
+        <span>kawukistuart82@gmail.com</span>
+      </div>
+      <div class="contact-item">
+        <i class="fab fa-x-twitter"></i>
+        <span>@stuartvirus</span>
+      </div>
+      <div class="contact-item">
+        <i class="fas fa-map-marker-alt"></i>
+        <span>Kampala, Uganda</span>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
